@@ -1,0 +1,42 @@
+<style>
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+
+    .navbar-custom {
+        background-color: #00152b;
+    }
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link,
+    .navbar-custom .navbar-text {
+        color: white;
+    }
+  }
+</style>
+
+<!-- Custom styles for this template -->
+<!-- <link href="navbar-top-fixed.css" rel="stylesheet"> -->
+<nav class="navbar navbar-expand-md navbar-custom fixed-top">
+  <div class="container">
+    <!-- <a class="navbar-brand" href="/">space_Veins</a> -->
+    <a class="navbar-brand" href="/documentation">space_Veins</a>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        {{ range sort .Site.Sections.ByTitle }}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ .URL }}"> {{ .Title }} </a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</nav>

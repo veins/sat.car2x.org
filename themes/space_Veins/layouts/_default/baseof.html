@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta name="description" content="Homepage of space_Veins"> -->
+        <title>{{ .Title }} - space_Veins</title>
+        <!-- bootstrap core css -->
+        <link href="/assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+        <!-- space_Veins icon -->
+        <link rel="icon" href="/assets/icons/logo_space_Veins.svg">
+    </head>
+    <body style="padding-top: 56px;
+  background: url(/assets/pictures/nasa-satellite-earth.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;">
+        {{ partial "navbar" . }}
+        {{ block "main" . }}
+
+        {{ end }}
+        {{ partial "footer" . }}
+    </body>
+</html>
+
