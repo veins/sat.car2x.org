@@ -28,12 +28,12 @@
 <nav class="navbar navbar-expand-md navbar-custom fixed-top">
   <div class="container">
     <!-- <a class="navbar-brand" href="/">space_Veins</a> -->
-    <a class="navbar-brand" href="/documentation">space_Veins</a>
+    <a class="navbar-brand" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'" href="/home">space_Veins</a>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         {{ range sort .Site.Sections.ByTitle }}
         <li class="nav-item">
-          <a class="nav-link" href="{{ .URL }}"> {{ .Title }} </a>
+          <a class="nav-link" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'" href="{{ .URL }}"> {{ .Title }} </a>
         </li>
         {{ end }}
       </ul>
