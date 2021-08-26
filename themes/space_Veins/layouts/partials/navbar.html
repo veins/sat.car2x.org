@@ -11,24 +11,30 @@
     .bd-placeholder-img-lg {
       font-size: 3.5rem;
     }
-
-    .navbar-custom {
-        background-color: #00152b;
-    }
-    .navbar-custom .navbar-brand,
-    .navbar-custom .nav-link,
-    .navbar-custom .navbar-text {
-        color: white;
-    }
   }
+
+    span.navbar-custom nav.navbar-custom {
+        background-color: #00152b !important;
+    }
+    nav.navbar-custom .navbar-brand,
+    nav.navbar-custom .nav-link,
+    nav.navbar-custom .navbar-text {
+        color: white !important;
+    }
+    nav.navbar-custom .navbar-toggler {
+        border-color: white !important;
+    }
 </style>
 
 <!-- Custom styles for this template -->
 <!-- <link href="navbar-top-fixed.css" rel="stylesheet"> -->
-<nav class="navbar navbar-expand-md navbar-custom fixed-top">
+<span class="navbar-custom"><nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top navbar-custom">
   <div class="container">
     <!-- <a class="navbar-brand" href="/">space_Veins</a> -->
     <a class="navbar-brand" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'" href="/home">space_Veins</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         {{ range sort .Site.Sections.ByTitle }}
@@ -39,4 +45,5 @@
       </ul>
     </div>
   </div>
-</nav>
+</nav></span>
+
