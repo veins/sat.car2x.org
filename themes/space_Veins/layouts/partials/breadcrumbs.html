@@ -1,5 +1,5 @@
 <div id="breadcrumbs">
-    <a href="/home">space_Veins</a>
+    <a href="/about">space_Veins</a>
     {{ if ne .Title "space_Veins" }}
         {{ .Scratch.Set "permalinkparts" (split .RelPermalink "/") }}
         {{ range $index, $part := (.Scratch.Get "permalinkparts") }}
