@@ -1,7 +1,7 @@
 ---
 title: "Impressum"
 date: 2021-08-30T20:04:47+02:00
-draft: true
+draft: false
 ---
 <h1>Impressum</h1>
 <p>
