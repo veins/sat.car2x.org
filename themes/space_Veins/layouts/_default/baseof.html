@@ -17,19 +17,21 @@
   -o-background-size: cover;
   background-size: cover;">
         {{ partial "navbar" . }}
-        <div class="container" style="padding:1px">
-            <div class="p-1 mb-4 bg-light rounded-3">
-               <div class="container-fluid py-5">
-                    {{ partial "header" . }}
-                    {{ partial "breadcrumbs" . }}
-                    <hr>
-                    {{ block "main" . }}
+        <main>
+            <div class="container" style="padding:1px">
+                <div class="p-1 mb-4 bg-light rounded-3">
+                   <div class="container-fluid py-5">
+                        {{ partial "header" . }}
+                        {{ partial "breadcrumbs" . }}
+                        <hr>
+                        {{ block "main" . }}
 
-                    {{ end }}
-                    <hr>
+                        {{ end }}
+                        <hr>
+                    </div>
                 </div>
             </div>
-        </div>
+        </main>
         {{ partial "footer" . }}
         <script src="/assets/bootstrap/bootstrap.bundle.min.js"></script>
     </body>
