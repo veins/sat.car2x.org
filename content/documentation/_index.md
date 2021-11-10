@@ -5,7 +5,7 @@ draft: false
 ---
 
 **space_Veins** provides satellite models for OMNeT++ which consider satellites' mobility as well as Vehicle-to-Satellite communication.
-As soon as the first version of space_Veins is published, a detailed documentation regarding the following aspects can be found here:
+In near future, a detailed documentation regarding the following aspects can be found here:
 - Installation
 - Running the example
 - Simulation architecture
