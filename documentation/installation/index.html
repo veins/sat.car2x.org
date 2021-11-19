@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<meta name=description content="Documentation - space_Veins">
+<meta name=description content="Installation - space_Veins">
 <meta name=author content="Mario Franke">
 <link href=/assets/bootstrap/bootstrap.min.css rel=stylesheet>
 <link rel=apple-touch-icon sizes=180x180 href=/assets/icons/apple-touch-icon.png>
@@ -12,7 +12,7 @@
 <link rel=mask-icon href=/assets/icons/safari-pinned-tab.svg color=#00152b>
 <meta name=msapplication-TileColor content="#ffffff">
 <meta name=theme-color content="#ffffff">
-<title>Documentation - space_Veins</title>
+<title>Installation - space_Veins</title>
 </head>
 <body style="padding-top:56px;background:url(/assets/pictures/nasa-satellite-earth.jpg)no-repeat 50% fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover">
 <style>.bd-placeholder-img{font-size:1.125rem;text-anchor:middle;-webkit-user-select:none;-moz-user-select:none;user-select:none}@media(min-width:768px){.bd-placeholder-img-lg{font-size:3.5rem}}span.navbar-custom nav.navbar-custom{background-color:#00152b!important}nav.navbar-custom .navbar-brand,nav.navbar-custom .nav-link,nav.navbar-custom .navbar-text{color:#fff!important}nav.navbar-custom .navbar-toggler{border-color:#fff!important}</style>
@@ -49,7 +49,7 @@
 <img src=/assets/icons/logo_space_Veins.svg alt=logo_space_Veins.svg style=width:96px>
 </td>
 <td>
-<h1 style=padding-top:32px;padding-left:10px>Documentation</h1>
+<h1 style=padding-top:32px;padding-left:10px>Installation</h1>
 </td>
 </tr>
 </table>
@@ -59,27 +59,46 @@
 <div id=breadcrumbs>
 <a href=/about>space_Veins</a>
 > <a href=/documentation/>Documentation</a>
+> <a href=/documentation/installation/>Installation</a>
 </div>
 <hr>
-<p><strong>space_Veins</strong> provides satellite models for OMNeT++ which consider satellites' mobility as well as Vehicle-to-Satellite communication.
-Currently, only the following parts of space_Veins are documented since space_Veins is still in the early stages of development:</p>
+<h4 id=system-requirements>System requirements:</h4>
 <ul>
-<li><a href=/documentation/installation>Installation</a></li>
-<li><a href=/documentation/example>Running the example</a></li>
-</ul>
-<p>In the future, a detailed documentation regarding the following aspects can be found here:</p>
+<li>Debian 10, Debian 11, Ubuntu 20.04 (other Linux distribution might work, too, but are not tested yet)</li>
+<li>Veins 5.1 (which depends on)
 <ul>
-<li>Simulation architecture</li>
-<li>Abstractions/models used</li>
-<li>Satellites' mobility</li>
-<li>Vehicle-to-Satellite communication stack</li>
+<li>OMNeT++ 5.6.2</li>
+<li>SUMO 1.8.0</li>
 </ul>
-<p>For documentation regarding Veins, SUMO and OMNeT++ please follow the links listed below:</p>
-<ul>
-<li><a href=http://veins.car2x.org/documentation/>Veins</a></li>
-<li><a href=https://sumo.dlr.de/docs/index.html>SUMO - Simulation of Urban Mobility</a></li>
-<li><a href=https://omnetpp.org/documentation/>OMNeT++</a></li>
+</li>
+<li><a href=http://conan.io/index.html>Conan</a> 1.42.1 (A C/C++ package manager required to install <a href=https://proj.org/>PROJ</a> 8.1.1)</li>
 </ul>
+<p>You can find Veins 5.1 and its dependencies already installed in the virtual machines <a href=http://veins.car2x.org/documentation/instant-veins/>Instant Veins 5.1-i2</a></p>
+<h4 id=guide>Guide:</h4>
+<ol>
+<li>
+<p>Install Veins, OMNeT++, and SUMO in a single directory e.g., <code>src</code> (already done in Instant Veins 5.1-i2).</p>
+</li>
+<li>
+<p>Download Conan from <a href=http://conan.io/downloads.html>http://conan.io/downloads.html</a> and install it.</p>
+</li>
+<li>
+<p>Clone the space_Veins source files in the same directory as Veins, OMNeT++, and SUMO are located. (For Instant Veins 5.1-i2 it is <code>/home/veins/src</code>.)</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>git clone https://github.com/veins/space_veins.git
+</code></pre></div></li>
+<li>
+<p>Go into the <code>space_veins</code> directory.</p>
+</li>
+<li>
+<p>Run the following Makefile targets</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>make conan_deps
+make makefiles
+make
+</code></pre></div></li>
+<li>
+<p>If all steps are finished successfully space_Veins is ready to use.</p>
+</li>
+</ol>
 <hr>
 </div>
 </div>

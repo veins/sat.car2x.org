@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<meta name=description content="Documentation - space_Veins">
+<meta name=description content="Running the example - space_Veins">
 <meta name=author content="Mario Franke">
 <link href=/assets/bootstrap/bootstrap.min.css rel=stylesheet>
 <link rel=apple-touch-icon sizes=180x180 href=/assets/icons/apple-touch-icon.png>
@@ -12,7 +12,7 @@
 <link rel=mask-icon href=/assets/icons/safari-pinned-tab.svg color=#00152b>
 <meta name=msapplication-TileColor content="#ffffff">
 <meta name=theme-color content="#ffffff">
-<title>Documentation - space_Veins</title>
+<title>Running the example - space_Veins</title>
 </head>
 <body style="padding-top:56px;background:url(/assets/pictures/nasa-satellite-earth.jpg)no-repeat 50% fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover">
 <style>.bd-placeholder-img{font-size:1.125rem;text-anchor:middle;-webkit-user-select:none;-moz-user-select:none;user-select:none}@media(min-width:768px){.bd-placeholder-img-lg{font-size:3.5rem}}span.navbar-custom nav.navbar-custom{background-color:#00152b!important}nav.navbar-custom .navbar-brand,nav.navbar-custom .nav-link,nav.navbar-custom .navbar-text{color:#fff!important}nav.navbar-custom .navbar-toggler{border-color:#fff!important}</style>
@@ -49,7 +49,7 @@
 <img src=/assets/icons/logo_space_Veins.svg alt=logo_space_Veins.svg style=width:96px>
 </td>
 <td>
-<h1 style=padding-top:32px;padding-left:10px>Documentation</h1>
+<h1 style=padding-top:32px;padding-left:10px>Running the example</h1>
 </td>
 </tr>
 </table>
@@ -59,27 +59,29 @@
 <div id=breadcrumbs>
 <a href=/about>space_Veins</a>
 > <a href=/documentation/>Documentation</a>
+> <a href=/documentation/example/>Example</a>
 </div>
 <hr>
-<p><strong>space_Veins</strong> provides satellite models for OMNeT++ which consider satellites' mobility as well as Vehicle-to-Satellite communication.
-Currently, only the following parts of space_Veins are documented since space_Veins is still in the early stages of development:</p>
-<ul>
-<li><a href=/documentation/installation>Installation</a></li>
-<li><a href=/documentation/example>Running the example</a></li>
-</ul>
-<p>In the future, a detailed documentation regarding the following aspects can be found here:</p>
-<ul>
-<li>Simulation architecture</li>
-<li>Abstractions/models used</li>
-<li>Satellites' mobility</li>
-<li>Vehicle-to-Satellite communication stack</li>
-</ul>
-<p>For documentation regarding Veins, SUMO and OMNeT++ please follow the links listed below:</p>
-<ul>
-<li><a href=http://veins.car2x.org/documentation/>Veins</a></li>
-<li><a href=https://sumo.dlr.de/docs/index.html>SUMO - Simulation of Urban Mobility</a></li>
-<li><a href=https://omnetpp.org/documentation/>OMNeT++</a></li>
-</ul>
+<h4 id=preparation>Preparation</h4>
+<p>The satellites' mobility is modeled by the SGP4Mobility module.
+As its name suggests the model is based on the SGP4 model which relys on TLE data.
+Due to the unknown licensing of TLE data space_Veins does not include the required TLE data.
+Up to date TLE data can be download at e.g., <a href=https://www.celestrak.com/NORAD/elements/>https://www.celestrak.com/NORAD/elements/</a>.
+The <a href=https://web.archive.org/>Wayback Machine</a> might be helpful to find older TLE data sets.
+Additionally, <a href=https://rhodesmill.org/skyfield/earth-satellites.html>Skyfield</a> might be helpful to detect satellites which fly over Erlangen based on the TLE data used.</p>
+<p>The desired TLE set of a single satellite has to be copied in the lines 61-63 of <code>examples/space_veins/omnetpp.ini</code>.
+Further, you have to set the corresponding wall clock time in the SGP4Mobility module, see the parameter <code>wall_clock_sim_start_time_utc</code> in <code>src/space_veins/modules/mobility/SGP4Mobility.ned</code>.</p>
+<p>Currently, the example consists of a single satellite and a single vehicle which exchange ping messages.</p>
+<h4 id=running-the-example>Running the example</h4>
+<p>For running the example the Makefile in the root directory of space_Veins provides three targets:</p>
+<ol>
+<li><code>make run_example</code><br>
+This target starts the example scenarion in the <strong>release</strong> mode and in the commandline environment.</li>
+<li><code>make run_dbg_example_cmd</code><br>
+This target starts the example scenarion in the <strong>debug</strong> mode and in the commandline environment.</li>
+<li><code>make run_dbg_example_gui</code><br>
+This target starts the example scenarion in the <strong>debug</strong> mode and in the OMNeT++ GUI environment.</li>
+</ol>
 <hr>
 </div>
 </div>
