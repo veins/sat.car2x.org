@@ -2,6 +2,7 @@
     <a href="/about">space_Veins</a>
     {{ if ne .Title "space_Veins" }}
         {{ .Scratch.Set "permalinkparts" (split .RelPermalink "/") }}
+        {{ $lastindex := sub (len (.Scratch.Get "permalinkparts")) 2 }}
         {{ range $index, $part := (.Scratch.Get "permalinkparts") }}
             {{ range $i, $num := (seq 10) }}
                 {{ if ge $index $i }}
@@ -13,7 +14,12 @@
                 {{ end }}
             {{ end }}
             {{ if gt (len $part ) 0 }}
-                > <a href="/{{ $.Scratch.Get "url" }}">{{ humanize (replace $part "posts" "blog") }}</a>
+                >
+                {{ if eq $index $lastindex }}
+                    {{ humanize (replace $part "posts" "blog") }}
+                {{ else }}
+                    <a href="/{{ $.Scratch.Get "url" }}">{{ humanize (replace $part "posts" "blog") }}</a>
+                {{ end }}
             {{ end }}
         {{ end }}
     {{ end }}

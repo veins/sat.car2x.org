@@ -8,3 +8,10 @@ enableGitInfo = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    lineNos = true
+    noClasses = false
+    style = 'monokai'
+    tabWidth = 4
