@@ -5,11 +5,27 @@ draft: false
 ---
 {{< btn-green link="https://github.com/veins/space_veins/tree/master" btn-text="View the \"master\" branch at github" >}}
 <br>
-## space_Veins 0.2
-space_Veins 0.2 is online. Changes:
+
+## space_Veins-0.3 (latest)
+
+{{< btn-green link="https://github.com/veins/space_veins/tree/space_Veins-0.3" btn-text="View the \"space_Veins-0.3\" branch at github" >}}
+
+Changes:
+* SGP4Mobility: Improved timing calculations
+* Singularity support
+* VS Code Devcontainers support
+* SatelliteInserter: An OMNeT++ module reading a file containing TLEs and instantiating corresponding satellites in the simulation
+
+## space_Veins-0.2 (deprecated)
+
+{{< btn-green link="https://github.com/veins/space_veins/tree/space_Veins-0.2" btn-text="View the \"space_Veins-0.2\" branch at github" >}}
+
+Changes:
 * The satellite mobility model is still based on the SGP4 model but now it is purely written in C/C++ code.
 * Skyfield and all required dependencies are removed.
 * Some bug fixes.
 
-## space_Veins 0.1
+## space_Veins-0.1 (deprecated)
+{{< btn-green link="https://github.com/veins/space_veins/tree/space_Veins-0.1" btn-text="View the \"space_Veins-0.1\" branch at github" >}}
+
 space_Veins 0.1 is released and ready to download from its github repository. Since it depends on Veins 5.1, space_Veins requires all dependencies of Veins 5.1, like SUMO and OMNeT++, too.
