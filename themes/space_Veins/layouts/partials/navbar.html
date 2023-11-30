@@ -39,7 +39,7 @@
       <ul class="navbar-nav mr-auto">
         {{ range sort .Site.Sections.ByTitle }}
         <li class="nav-item">
-          <a class="nav-link" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'" href="{{ .URL }}"> {{ .Title }} </a>
+          <a class="nav-link" onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'" href="{{ .RelPermalink }}"> {{ .Title }} </a>
         </li>
         {{ end }}
       </ul>
