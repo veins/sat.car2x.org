@@ -15,7 +15,9 @@ There are two recommended ways to run space_Veins which either use VS Code Devco
 ##### Guide:
 1. Start Docker
 
-1. Open the space_Veins root directory in VS Code 
+1. Open the space_Veins root directory in VS Code. Install the VS Code extension 'Dev Containers' if it is not already installed.
+
+    {{< image src="devcontainer_extension.png" width="400px" >}}
 
 1. A pop-up in VS Code asks if the current folder should be reopened in a container. Click "Reopen in Container".
 
