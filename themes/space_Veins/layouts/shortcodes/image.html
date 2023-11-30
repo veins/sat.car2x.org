@@ -1,0 +1,5 @@
+{{- /* */ -}}
+<a href="{{.Get "src"}}">
+    <img src="{{.Get "src" }}" class="img-fluid" style="max-width: {{ if (.Get "width") }}{{ .Get "width" }}{{ else }}100%{{ end }};" alt="">
+</a>
+{{- /* */ -}}
