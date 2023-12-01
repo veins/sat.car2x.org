@@ -5,8 +5,8 @@ draft: false
 ---
 
 If you want to have a look at the latest source code:
+
 {{< btn-green link="https://github.com/veins/space_veins/tree/master" btn-text="View the \"master\" branch at GitHub" >}}
-<br>
 
 ## space_Veins-0.3 (latest)
 
