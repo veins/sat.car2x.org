@@ -1,0 +1,11 @@
+div.chroma {
+    padding: .5em;
+}
+
+div.chroma {
+    overflow: auto;
+}
+
+pre.chroma {
+    margin: 0;
+}

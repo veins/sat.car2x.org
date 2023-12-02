@@ -1,0 +1,17 @@
+main div.container h2 {
+    margin-top: 2em;
+    border-bottom: 1px solid #eaecef;
+}
+
+main div.container h3 {
+    margin-top: 2em;
+    border-bottom: 1px solid #eaecef;
+}
+
+main div.container a[href^="http://"]:not([class])::after, main div.container a[href^="https://"]:not([class])::after {
+    content: " \2197";
+    font-style: normal;
+    font-weight: normal;
+    color: #999;
+    font-size: 0.8em;
+}

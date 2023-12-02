@@ -1,99 +1,13 @@
-<!doctype html><html class=h-100 lang=en>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<meta name=description content="Running the example - space_Veins">
-<meta name=author content="Mario Franke">
-<link href=/assets/bootstrap/bootstrap.min.css rel=stylesheet>
-<link rel=apple-touch-icon sizes=180x180 href=/assets/icons/apple-touch-icon.png>
-<link rel=icon type=image/png sizes=32x32 href=/assets/icons/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/assets/icons/favicon-16x16.png>
-<link rel=manifest href=/assets/icons/site.webmanifest>
-<link rel=mask-icon href=/assets/icons/safari-pinned-tab.svg color=#00152b>
-<meta name=msapplication-TileColor content="#ffffff">
-<meta name=theme-color content="#ffffff">
-<title>Running the example - space_Veins</title>
-</head>
-<body style="padding-top:56px;background:url(/assets/pictures/nasa-satellite-earth.jpg)no-repeat 50% fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover">
-<style>.bd-placeholder-img{font-size:1.125rem;text-anchor:middle;-webkit-user-select:none;-moz-user-select:none;user-select:none}@media(min-width:768px){.bd-placeholder-img-lg{font-size:3.5rem}}span.navbar-custom nav.navbar-custom{background-color:#00152b!important}nav.navbar-custom .navbar-brand,nav.navbar-custom .nav-link,nav.navbar-custom .navbar-text{color:#fff!important}nav.navbar-custom .navbar-toggler{border-color:#fff!important}</style>
-<span class=navbar-custom><nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top navbar-custom">
-<div class=container>
-<a class=navbar-brand onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'" href=/about>space_Veins</a>
+<!doctype html><html class=h-100 lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=description content="Running the example - space_Veins"><meta name=author content="Mario Franke"><link href=/assets/bootstrap/bootstrap.min.css rel=stylesheet><link href=/assets/css/default.css rel=stylesheet><link href=/assets/css/syntax.css rel=stylesheet><link href=/assets/css/overrides.css rel=stylesheet><link rel=apple-touch-icon sizes=180x180 href=/assets/icons/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/assets/icons/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/assets/icons/favicon-16x16.png><link rel=manifest href=/assets/icons/site.webmanifest><link rel=mask-icon href=/assets/icons/safari-pinned-tab.svg color=#00152b><meta name=msapplication-TileColor content="#ffffff"><meta name=theme-color content="#ffffff"><title>Running the example - space_Veins</title></head><body style="padding-top:56px;background:url(/assets/pictures/nasa-satellite-earth.jpg)no-repeat 50% fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover"><style>.bd-placeholder-img{font-size:1.125rem;text-anchor:middle;-webkit-user-select:none;-moz-user-select:none;user-select:none}@media(min-width:768px){.bd-placeholder-img-lg{font-size:3.5rem}}span.navbar-custom nav.navbar-custom{background-color:#00152b!important}nav.navbar-custom .navbar-brand,nav.navbar-custom .nav-link,nav.navbar-custom .navbar-text{color:#fff!important}nav.navbar-custom .navbar-toggler{border-color:#fff!important}</style><span class=navbar-custom><nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top navbar-custom"><div class=container><a class=navbar-brand onmouseover='style="text-decoration:underline"' onmouseout='style="text-decoration:none"' href=/about>space_Veins</a>
 <button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarCollapse aria-controls=navbarCollapse aria-expanded=false aria-label="Toggle navigation">
-<span class=navbar-toggler-icon></span>
-</button>
-<div class="collapse navbar-collapse" id=navbarCollapse>
-<ul class="navbar-nav mr-auto">
-<li class=nav-item>
-<a class=nav-link onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'" href=/documentation/> Documentation </a>
-</li>
-<li class=nav-item>
-<a class=nav-link onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'" href=/download/> Download </a>
-</li>
-<li class=nav-item>
-<a class=nav-link onmouseover="style='text-decoration:underline'" onmouseout="style='text-decoration:none'" href=/publications/> Publications </a>
-</li>
-</ul>
-</div>
-</div>
-</nav></span>
-<main>
-<div class=container style=padding:1px>
-<div class="p-1 mb-4 bg-light rounded-3">
-<div class="container-fluid py-5">
-<header>
-<div>
-<table>
-<tr>
-<td>
-<img src=/assets/icons/logo_space_Veins.svg alt=logo_space_Veins.svg style=width:96px>
-</td>
-<td>
-<h1 style=padding-top:32px;padding-left:10px>Running the example</h1>
-</td>
-</tr>
-</table>
-</hr>
-</div>
-</header>
-<div id=breadcrumbs>
-<a href=/about>space_Veins</a>
-> <a href=/documentation/>Documentation</a>
-> <a href=/documentation/example/>Example</a>
-</div>
-<hr>
-<h4 id=preparation>Preparation</h4>
-<p>The satellites' mobility is modeled by the SGP4Mobility module.
+<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=navbarCollapse><ul class="navbar-nav mr-auto"><li class=nav-item><a class=nav-link onmouseover='style="text-decoration:underline"' onmouseout='style="text-decoration:none"' href=/documentation/>Documentation</a></li><li class=nav-item><a class=nav-link onmouseover='style="text-decoration:underline"' onmouseout='style="text-decoration:none"' href=/download/>Download</a></li><li class=nav-item><a class=nav-link onmouseover='style="text-decoration:underline"' onmouseout='style="text-decoration:none"' href=/publications/>Publications</a></li></ul></div></div></nav></span><main><div class=container style=padding:1px><div class="p-1 mb-4 bg-light rounded-3"><div class="container-fluid py-5"><header><div><table><tr><td><img src=/assets/icons/logo_space_Veins.svg alt=logo_space_Veins.svg style=width:96px></td><td><h1 style=padding-top:32px;padding-left:10px>Running the example</h1></td></tr></table></hr></div></header><div id=breadcrumbs><a href=/about>space_Veins</a>
+>
+<a href=/documentation/>Documentation</a>
+>
+Example</div><hr><h4 id=preparation>Preparation</h4><p>The satellites&rsquo; mobility is modeled by the SGP4Mobility module.
 As its name suggests the model is based on the SGP4 model which relys on TLE data.
 Due to the unknown licensing of TLE data space_Veins does not include the required TLE data.
 Up to date TLE data can be download at e.g., <a href=https://www.celestrak.com/NORAD/elements/>https://www.celestrak.com/NORAD/elements/</a>.
 The <a href=https://web.archive.org/>Wayback Machine</a> might be helpful to find older TLE data sets.
-Additionally, <a href=https://rhodesmill.org/skyfield/earth-satellites.html>Skyfield</a> might be helpful to detect satellites which fly over Erlangen based on the TLE data used.</p>
-<p>The desired TLE set of a single satellite has to be copied in the lines 61-63 of <code>examples/space_veins/omnetpp.ini</code>.
-Further, you have to set the corresponding wall clock time in the SGP4Mobility module, see the parameter <code>wall_clock_sim_start_time_utc</code> in <code>src/space_veins/modules/mobility/SGP4Mobility.ned</code>.</p>
-<p>Currently, the example consists of a single satellite and a single vehicle which exchange ping messages.</p>
-<h4 id=running-the-example>Running the example</h4>
-<p>For running the example the Makefile in the root directory of space_Veins provides three targets:</p>
-<ol>
-<li><code>make run_example</code><br>
-This target starts the example scenarion in the <strong>release</strong> mode and in the commandline environment.</li>
-<li><code>make run_dbg_example_cmd</code><br>
-This target starts the example scenarion in the <strong>debug</strong> mode and in the commandline environment.</li>
-<li><code>make run_dbg_example_gui</code><br>
-This target starts the example scenarion in the <strong>debug</strong> mode and in the OMNeT++ GUI environment.</li>
-</ol>
-<hr>
-</div>
-</div>
-</div>
-</main>
-<footer class="footer fixed-bottom mt-auto py-0 bg-light">
-<div class="container text-center">
-<span class=text-muted>
-© <a href=https://www.cms-labs.org/people/franke>Mario Franke</a> 2021 | Last modified: 19 November 2021 | <a href=/imprint-and-privacy/>Imprint and Privacy</a>
-</span>
-</div>
-</footer>
-<script src=/assets/bootstrap/bootstrap.bundle.min.js></script>
-</body>
-</html>
+Additionally, <a href=https://rhodesmill.org/skyfield/earth-satellites.html>Skyfield</a> might be helpful to detect satellites which fly over Erlangen based on the TLE data used.</p><p>The desired TLE set of a single satellite has to be copied in the lines 61-63 of <code>examples/space_veins/omnetpp.ini</code>.
+Further, you have to set the corresponding wall clock time in the SGP4Mobility module, see the parameter <code>wall_clock_sim_start_time_utc</code> in <code>src/space_veins/modules/mobility/SGP4Mobility.ned</code>.</p><p>Currently, the example consists of a single satellite and a single vehicle which exchange ping messages.</p><h4 id=running-the-example>Running the example</h4><p>For running the example the Makefile in the root directory of space_Veins provides three targets:</p><ol><li><code>make run_example</code><br>This target starts the example scenarion in the <strong>release</strong> mode and in the commandline environment.</li><li><code>make run_dbg_example_cmd</code><br>This target starts the example scenarion in the <strong>debug</strong> mode and in the commandline environment.</li><li><code>make run_dbg_example_gui</code><br>This target starts the example scenarion in the <strong>debug</strong> mode and in the OMNeT++ GUI environment.</li></ol><hr></div></div></div></main><footer class="footer fixed-bottom mt-auto py-0 bg-light"><div class="container text-center"><span class=text-muted>© <a href=https://www.cms-labs.org/people/franke>Mario Franke</a> 2021 | Last modified: 19 November 2021 | <a href=/imprint-and-privacy/>Imprint and Privacy</a></span></div></footer><script src=/assets/bootstrap/bootstrap.bundle.min.js></script></body></html>
