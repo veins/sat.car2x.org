@@ -1,6 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>space_Veins</title><link>https://www.sat.car2x.org/</link><description>Recent content on space_Veins</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 19 Nov 2021 17:36:59 +0100</lastBuildDate><atom:link href="https://www.sat.car2x.org/index.xml" rel="self" type="application/rss+xml"/><item><title>Impressum</title><link>https://www.sat.car2x.org/imprint-and-privacy/</link><pubDate>Mon, 30 Aug 2021 20:04:47 +0200</pubDate><guid>https://www.sat.car2x.org/imprint-and-privacy/</guid><description>Impressum Stand: 31 August 2021 Diensteanbieter Mario Franke
-Langer Weg 52
-33100 Paderborn
-E-Mail: contact[at]m-franke[dot]net Impressum: https://sat.car2x.org/imprint-and-privacy/ Social Media und andere OnlinepräsenzenDieses Impressum gilt auch für die folgenden Social-Media-Präsenzen und Onlineprofile: https://linkedin.com/in/mario-franke-9497621b5
-Haftungs- und SchutzrechtshinweiseHaftungsausschluss: Die Inhalte dieses Onlineangebotes wurden sorgfältig und nach unserem aktuellen Kenntnisstand erstellt, dienen jedoch nur der Information und entfalten keine rechtlich bindende Wirkung, sofern es sich nicht um gesetzlich verpflichtende Informationen (z.B. das Impressum, die Datenschutzerklärung, AGB oder verpflichtende Belehrungen von Verbrauchern) handelt.</description></item><item><title>space_Veins</title><link>https://www.sat.car2x.org/about/</link><pubDate>Wed, 25 Aug 2021 11:27:11 +0200</pubDate><guid>https://www.sat.car2x.org/about/</guid><description>space_Veins is an extension of Veins which integrates satellites as additional communication partners in vehicular networks. By using Veins, the discrete event simulator OMNeT++ and the road traffic simulator SUMO are used in order to simulate vehicular networks. In addition, space_Veins provides OMNeT++ modules for modeling satellites. The satellites&amp;rsquo; mobility is based on the SGP4 model which can calculate orbits of satellites based on NASA/NORAD Two-Line Element sets.
-For further information please refer to the documentation.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>space_Veins</title><link>https://www.sat.car2x.org/</link><description>Recent content on space_Veins</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 19 Nov 2021 17:36:59 +0100</lastBuildDate><atom:link href="https://www.sat.car2x.org/index.xml" rel="self" type="application/rss+xml"/><item><title>Impressum</title><link>https://www.sat.car2x.org/imprint-and-privacy/</link><pubDate>Mon, 30 Aug 2021 20:04:47 +0200</pubDate><guid>https://www.sat.car2x.org/imprint-and-privacy/</guid><description>&lt;h1>Impressum&lt;/h1>
+&lt;p>
+ Stand: 31 August 2021
+
+&lt;/p>
+&lt;h2 id="m46">Diensteanbieter&lt;/h2>
+&lt;p>
+ Mario Franke&lt;br />
+ Langer Weg 52&lt;br />
+ 33100 Paderborn&lt;br />
+ &lt;br />
+ E-Mail: &lt;a class="adsimple-311295196" href="mailto:contact@m-franke.net">contact[at]m-franke[dot]net&lt;/a>
+ &lt;br />
+ 
+ Impressum: &lt;a class="adsimple-311295196" href="https://sat.car2x.org/imprint-and-privacy/" target="_blank" rel="noopener">https://sat.car2x.org/imprint-and-privacy/&lt;/a>
+
+&lt;/p>
+&lt;h2 id="m172">Social Media und andere Onlinepräsenzen&lt;/h2>&lt;p>Dieses Impressum gilt auch für die folgenden Social-Media-Präsenzen und Onlineprofile: &lt;/p>
+&lt;p>&lt;a href="https://linkedin.com/in/mario-franke-9497621b5" target="_blank">https://linkedin.com/in/mario-franke-9497621b5&lt;/a>&lt;/p>
+&lt;h2 id="m65">Haftungs- und Schutzrechtshinweise&lt;/h2>&lt;p>&lt;strong>Haftungsausschluss&lt;/strong>: Die Inhalte dieses Onlineangebotes wurden sorgfältig und nach unserem aktuellen Kenntnisstand erstellt, dienen jedoch nur der Information und entfalten keine rechtlich bindende Wirkung, sofern es sich nicht um gesetzlich verpflichtende Informationen (z.B. das Impressum, die Datenschutzerklärung, AGB oder verpflichtende Belehrungen von Verbrauchern) handelt. Wir behalten uns vor, die Inhalte vollständig oder teilweise zu ändern oder zu löschen, soweit vertragliche Verpflichtungen unberührt bleiben. Alle Angebote sind freibleibend und unverbindlich. &lt;/p></description></item><item><title>space_Veins</title><link>https://www.sat.car2x.org/about/</link><pubDate>Wed, 25 Aug 2021 11:27:11 +0200</pubDate><guid>https://www.sat.car2x.org/about/</guid><description>&lt;p>&lt;strong>space_Veins&lt;/strong> is an extension of &lt;a href="https://veins.car2x.org">Veins&lt;/a> which integrates satellites as additional communication partners in vehicular networks.
+By using Veins, the discrete event simulator &lt;a href="https://omnetpp.org">OMNeT++&lt;/a> and the road traffic simulator &lt;a href="https://www.eclipse.org/sumo">SUMO&lt;/a> are used in order to simulate vehicular networks.
+In addition, space_Veins provides OMNeT++ modules for modeling satellites.
+The satellites&amp;rsquo; mobility is based on the &lt;a href="https://celestrak.com/publications/AIAA/2006-6753/">SGP4 model&lt;/a> which can calculate orbits of satellites based on NASA/NORAD &lt;a href="https://www.celestrak.com/NORAD/elements/">Two-Line Element sets&lt;/a>.&lt;/p>
+&lt;p>For further information please refer to the documentation.&lt;br>&lt;/p></description></item></channel></rss>
