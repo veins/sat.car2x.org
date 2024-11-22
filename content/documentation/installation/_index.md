@@ -7,12 +7,18 @@ draft: false
 This installation guide only works with **space_Veins-0.3**. All other versions of space_Veins are deprecated and are no longer supported.
 There are two recommended ways to run space_Veins which either use VS Code Devcontainers (Docker) or Singularity.
 ### VS Code Devcontainers
-##### Requirements/Tested with:
+#### Requirements/Tested with:
 - [Docker] for Windows 4.22.0
 - [VS Code] for Windows 1.82.2
 - [VS Code extension 'Dev Containers'] 0.309.0
+- [Ubuntu 22.04] in WSL2
 
-##### Guide:
+##### Attention
+If you are using a Windows OS, please install the [WSL2].
+Then save space_Veins inside a Linux-based OS in the WSL2.
+For running the Dev Container, make sure that the [WSL2 backend] is enabled in Docker.
+
+#### Guide:
 1. Start Docker
 
 1. Open the space_Veins root directory in VS Code. Install the VS Code extension 'Dev Containers' if it is not already installed.
@@ -51,11 +57,14 @@ There are two recommended ways to run space_Veins which either use VS Code Devco
 
 
 [Docker]: https://www.docker.com/get-started/
+[Ubuntu 22.04]: https://learn.microsoft.com/de-de/windows/wsl/install-manual#downloading-distributions
 [VS Code]: https://code.visualstudio.com/
 [VS Code extension 'Dev Containers']: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
+[WSL2]: https://learn.microsoft.com/en-us/windows/wsl/about
+[WSL2 backend]: https://docs.docker.com/desktop/features/wsl/
 
 ### Singularity
-##### Requirements/Tested with:
+#### Requirements/Tested with:
 
 - [Singularity][SYLABS] 3.11.0
 - [Debootstrap][DEBIAN] 1.0.126
@@ -63,7 +72,7 @@ There are two recommended ways to run space_Veins which either use VS Code Devco
 [SYLABS]: https://github.com/sylabs/singularity
 [DEBIAN]: https://wiki.debian.org/Debootstrap
 
-##### Guide:
+#### Guide:
 1. Build the Singularity container
     ```bash
     cd space_veins/singularity
